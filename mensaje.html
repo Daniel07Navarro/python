@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        hr{
+            width: 90%;
+            margin-left: 20px;
+            border: 0.7px solid black;
+        }
+        .container{
+            width: 600px;
+            height: 550px;
+            border-radius: 10px;
+            overflow: hidden;
+            font-family: Arial, Helvetica, sans-serif;
+            border: 1px solid #0D25A7;
+            margin: 20px;
+        }
+        .title-message{
+            background-color: #0D25A7;
+            height: 100px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            font-size: 2em;
+        }
+        .header-message, .body-message, .footer-message{
+            margin: 20px;
+        }
+        .body-message .title-body{
+            font-weight: bold;
+            margin: 10px 0px;
+        }
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+        td {
+            padding: 8px;
+            margin-right: 20px;
+            margin-top: 10px;
+        }
+        .container-button{
+            margin-top: 15px;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+        }
+        .container-button button{
+            width: 40%;
+            height: 34px;
+            background-color: #E52A2A;
+            color: white;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+        .footer-message{
+            text-align: center;
+        }
+        .footer-message .note-important{
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+        @media screen and (max-width:480px) {
+            .container{
+                width: 100%;
+                margin: 0px;
+                height: 640px;
+            }
+            .title-message{
+                font-size: 1.3em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="title-message">
+            <p>Mensaje Entrante de Contacto:</p>
+        </div>
+        <div class="header-message">
+            <p>
+                <strong>¡HOLA!</strong> TGH Technology Solution a recibido un nuevo mensaje de un potencial cliente desde la pagina web.
+            </p>
+        </div>
+        <hr>
+        <div class="body-message">
+            <p class="title-body">DATOS DEL CONTACTO:</p>
+            <table>
+                <tbody>
+                    <tr>
+                        <td>Nombre del contacto:</td>
+                        <td>Julian Roberto</td>
+                    </tr>
+                    <tr>
+                        <td>Apellidos del contacto:</td>
+                        <td>Gomez Bolañoz</td>
+                    </tr>
+                    <tr>
+                        <td>Telefono del contacto:</td>
+                        <td>98765432</td>
+                    </tr>
+                    <tr>
+                        <td>Correo del contacto:</td>
+                        <td>julian.contacto@gmail.com</td>
+                    </tr>
+                </tbody>
+            </table>
+
+        </div>
+        <hr>
+        <div class="footer-message">
+            <p class="note-important">NOTA IMPORTANTE:</p>
+            <P>No olvide contactarse con el cliente usando los datos proporcionados.</P>
+        </div>
+    </div>
+    
+</body>
+</html>
